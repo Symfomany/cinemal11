@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Movies;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -11,7 +12,12 @@ class MovieController extends Controller
      * Page lister les films
      */
     public function index(){
-        return view('movie/index');
+        $movies = Movies::all();
+
+
+        return view('movie/index', [
+            'movies' => $movies
+        ]);
     }
 
     /**

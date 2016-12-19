@@ -36,6 +36,25 @@ Route::group(['prefix' => 'movie'], function () {
 
 
 
+Route::group(['prefix' => 'categories'], function () {
+
+    Route::get('/index', 'CategoriesController@index')->name('index');
+    Route::get('/create', 'CategoriesController@create')->name('create');
+    Route::get('/update', 'CategoriesController@update')->name('update');
+    Route::get('/remove', 'CategoriesController@remove')->name('remove');
+
+});
+
+
+Route::group(['prefix' => 'actors'], function () {
+
+    Route::get('/index', 'ActorsController@index')->name('index');
+    Route::get('/create', 'ActorsController@create')->name('create');
+    Route::get('/update', 'ActorsController@update')->name('update');
+    Route::get('/remove', 'ActorsController@remove')->name('remove');
+
+});
+
 
 
 

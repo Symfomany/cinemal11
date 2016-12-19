@@ -1,0 +1,1 @@
+<p>Supprimer un acteur</p>

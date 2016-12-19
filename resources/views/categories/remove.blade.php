@@ -1,0 +1,1 @@
+<p>Supprimer une catégorie</p>
