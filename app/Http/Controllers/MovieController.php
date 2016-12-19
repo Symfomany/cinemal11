@@ -42,7 +42,6 @@ class MovieController extends Controller
         $movie->delete();
 
         return redirect()->back();
-
     }
 
 
