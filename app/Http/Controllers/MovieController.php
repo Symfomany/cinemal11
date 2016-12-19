@@ -37,8 +37,12 @@ class MovieController extends Controller
     /**
      * Page / ACtion de suppresions de films
      */
-    public function remove(){
-        return view('movie/remove');
+    public function remove($id){
+        $movie = Movies::find($id);
+        $movie->delete();
+
+        return redirect()->back();
+
     }
 
 

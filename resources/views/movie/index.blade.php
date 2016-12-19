@@ -55,7 +55,7 @@
                         <td>
                             <a class="btn btn-sm btn-primary"><i class="fa fa-search"></i> Voir</a>
                             <a class="btn btn-sm btn-warning"><i class="fa fa-pencil"></i> Editer</a>
-                            <a class="btn btn-sm btn-danger"><i class="fa fa-times"></i> Supprimer</a>
+                            <a href="{{ route('movie.remove', ['id' => $movie['id']] ) }}" class="btn btn-sm btn-danger"><i class="fa fa-times"></i> Supprimer</a>
                         </td>
                     </tr>
             @endforeach

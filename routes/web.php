@@ -30,7 +30,7 @@ Route::group(['prefix' => 'movie'], function () {
     Route::get('/index', 'MovieController@index')->name('index');
     Route::get('/create', 'MovieController@create')->name('create');
     Route::get('/update', 'MovieController@update')->name('update');
-    Route::get('/remove', 'MovieController@remove')->name('remove');
+    Route::get('/remove/{id}', 'MovieController@remove')->name('movie.remove');
 
 });
 
